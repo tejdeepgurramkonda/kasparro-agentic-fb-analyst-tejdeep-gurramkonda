@@ -1,0 +1,17 @@
+# --- GOOGLE GEN AI (V2 SDK) ---
+google-genai==1.52.0
+google-cloud-aiplatform==1.72.0
+
+# --- DATA ---
+pandas==2.3.3
+numpy==2.3.5
+scipy==1.16.3
+
+# --- UTILS ---
+pydantic==2.10.1
+pyyaml==6.0.3
+python-dotenv==1.1.1
+orjson==3.11.4
+
+# --- TESTING ---
+pytest==9.0.1
