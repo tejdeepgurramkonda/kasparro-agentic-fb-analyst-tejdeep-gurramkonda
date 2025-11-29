@@ -72,17 +72,17 @@ class AgentOrchestrator:
     def _save_outputs(self, plan, insights, creatives):
         # Save Insights JSON
         insights_path = os.path.join(self.reports_dir, "insights.json")
-        with open(insights_path, "w") as f:
+        with open(insights_path, "w", encoding="utf-8") as f:
             json.dump([i.model_dump() for i in insights], f, indent=2)
             
         # Save Creatives JSON
         creatives_path = os.path.join(self.reports_dir, "creatives.json")
-        with open(creatives_path, "w") as f:
+        with open(creatives_path, "w", encoding="utf-8") as f:
             json.dump([c.model_dump() for c in creatives], f, indent=2)
             
         # Generate Markdown Report
         report_path = os.path.join(self.reports_dir, "report.md")
-        with open(report_path, "w") as f:
+        with open(report_path, "w", encoding="utf-8") as f:
             f.write(f"# Kasparro Agentic Report\n")
             f.write(f"**Date**: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n")
             

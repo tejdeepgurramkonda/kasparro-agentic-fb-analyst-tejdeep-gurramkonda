@@ -1,6 +1,12 @@
 import typer
 import yaml
 import sys
+import os
+from dotenv import load_dotenv
+
+# Load environment variables explicitly
+load_dotenv(dotenv_path=".env")
+
 from src.utils.logging_utils import setup_logging, log
 from src.orchestrator.adk_app import AgentOrchestrator
 
