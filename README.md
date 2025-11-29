@@ -29,7 +29,7 @@ Edit `config/config.yaml`:
 python: "3.10"
 random_seed: 42
 llm:
-  model_name: "gemini-2.0-flash-001" # or gemini-1.5-flash
+  model_name: "gemini-2.5-pro" 
 thresholds:
   confidence_min: 0.6
 ```

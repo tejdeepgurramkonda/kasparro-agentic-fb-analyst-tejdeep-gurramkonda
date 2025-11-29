@@ -1,17 +1,13 @@
 # Kasparro Agentic Report
-**Date**: 2025-11-29 21:56
+**Date**: 2025-11-29 22:27
 
 ## 1. Execution Plan
-**Goal**: Investigate and address the ROAS drop in the last 7 days for Facebook Ads.
-- Load Facebook Ads data for the last 14 days, including spend, revenue, and impressions. Calculate daily ROAS. (Data Agent)
-- Identify the date when the ROAS drop started. Calculate the percentage decrease in ROAS compared to the previous 7-day period. (Insight Agent)
-- Analyze trends in spend, impressions, and CTR during the period of ROAS decline. Identify any significant changes. (Insight Agent)
-- Formulate hypotheses about the cause of the ROAS drop (e.g., increased competition, ad fatigue, targeting issues). (Insight Agent)
-- Evaluate the hypothesis that ad fatigue is the cause by checking CTR. If CTR has significantly decreased, ad fatigue is likely. Also, check frequency. (Evaluator Agent)
-- Evaluate the hypothesis that increased competition is the cause by checking CPM. If CPM has significantly increased, increased competition is likely. (Evaluator Agent)
-- Evaluate the hypothesis that targeting issues are the cause by checking audience performance. Identify underperforming audiences. (Evaluator Agent)
-- If ad fatigue is confirmed, generate new ad copy and headlines for the underperforming ads. (Creative Agent)
-- If targeting issues are confirmed, refine the audience targeting based on the underperforming audiences. (Data Agent)
+**Goal**: Investigate and address the drop in ROAS for Facebook Ads.
+- Load Facebook Ads data, including spend, revenue, and impressions, for the period leading up to and including the ROAS drop. Aggregate the data by day, ad campaign, and audience. (Data Agent)
+- Calculate ROAS, CTR, and Spend for each day, ad campaign, and audience segment. Identify the magnitude and timing of the ROAS drop. (Data Agent)
+- Analyze the calculated metrics to identify potential causes for the ROAS drop. Look for patterns in spend, CTR, and audience performance. Formulate hypotheses about the cause of the drop (e.g., increased competition, ad fatigue, targeting issues). (Insight Agent)
+- Evaluate the hypotheses generated in the previous step. For example, if ad fatigue is suspected, check CTR trends. If increased competition is suspected, analyze spend and impression data. If targeting issues are suspected, analyze audience performance. (Evaluator Agent)
+- If ad fatigue is identified as a significant factor, generate new ad copy and headlines for the underperforming campaigns. (Creative Agent)
 
 ## 2. Key Insights
 ### ⚠️ Overall ROAS is healthy but showing signs of potential decline. (Confidence: 0.60)
@@ -38,11 +34,11 @@
 
 **Recommendation**: Based on Instagram and Facebook platforms are performing similarly., we recommend testing new variations.
 
-### ⚠️ Potential creative fatigue in top performing creatives. (Confidence: 0.30)
+### ✅ Potential creative fatigue in top performing creatives. (Confidence: 0.70)
 **Hypothesis**: Some top creatives might be experiencing fatigue, leading to a decrease in effectiveness over time.
 
 **Evidence**:
-- 👎 CTR is 1.27%, which is healthy.
+- 👍 CTR is 1.27%, which is low (< 2.00%).
 
 **Recommendation**: Based on Potential creative fatigue in top performing creatives., we recommend testing new variations.
 
@@ -70,3 +66,10 @@
 
 **Recommendation**: Based on WOMEN | ATHLEISURE COOLING campaign shows high purchase volume but ROAS varies., we recommend testing new variations.
 
+
+## 3. Creative Recommendations
+### Campaign: MEN SIGNATURE SOT
+**Issue**: Low CTR/ROAS (0.00). Current creatives are not resonating with the target audience.
+- **Join Thousands of Satisfied Men!**: Leverages social proof by highlighting the popularity and satisfaction of other customers, building trust and encouraging trial.
+- **Limited Stock: Men's Signature SOT - Don't Miss Out!**: Creates a sense of urgency and scarcity, motivating immediate action by emphasizing limited availability.
+- **Say Goodbye to Discomfort!**: Focuses on the benefit of comfort and solves the problem of uncomfortable underwear, directly addressing a common pain point for men.

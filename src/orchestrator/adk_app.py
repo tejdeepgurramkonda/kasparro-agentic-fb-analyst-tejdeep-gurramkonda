@@ -25,7 +25,7 @@ class AgentOrchestrator:
         self.planner = PlannerAgent(self.llm_client)
         self.data_agent = DataAgent(config['paths']['data_csv'])
         self.insight_agent = InsightAgent(self.llm_client)
-        self.evaluator = EvaluatorAgent()
+        self.evaluator = EvaluatorAgent(config)
         self.creative_agent = CreativeAgent(self.llm_client)
         
         self.reports_dir = config['paths']['reports_dir']

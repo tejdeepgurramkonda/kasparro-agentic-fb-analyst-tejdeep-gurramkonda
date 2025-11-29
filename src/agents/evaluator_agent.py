@@ -7,8 +7,10 @@ class EvaluatorAgent:
     """
     Validates insights against the hard data to ensure they are grounded in reality.
     """
-    def __init__(self):
-        pass
+    def __init__(self, config: dict = None):
+        self.config = config or {}
+        self.ctr_threshold = self.config.get('thresholds', {}).get('ctr_low_threshold', 0.01)
+        self.roas_threshold = self.config.get('thresholds', {}).get('roas_low_threshold', 2.0)
 
     def validate(self, insight: Insight, data: DataSummary) -> ValidatedInsight:
         log.info(f"Validating insight: {insight.title}")
@@ -22,18 +24,17 @@ class EvaluatorAgent:
         # Check 1: If hypothesis mentions "Creative Fatigue" or "CTR", check if CTR is actually low
         if "CTR" in insight.hypothesis or "creative" in insight.hypothesis.lower():
             avg_ctr = data.avg_ctr
-            # Threshold from config could be used here, hardcoded for now based on common benchmarks
-            if avg_ctr < 0.01: # < 1%
+            if avg_ctr < self.ctr_threshold:
                 evidence_list.append(Evidence(
                     metric="CTR", value=avg_ctr, support=True, 
-                    description=f"CTR is {avg_ctr:.2%}, which is low (< 1%)."
+                    description=f"CTR is {avg_ctr:.2%}, which is low (< {self.ctr_threshold:.2%})."
                 ))
                 is_validated = True
                 score = min(score + 0.2, 1.0)
             else:
                 evidence_list.append(Evidence(
                     metric="CTR", value=avg_ctr, support=False, 
-                    description=f"CTR is {avg_ctr:.2%}, which is healthy."
+                    description=f"CTR is {avg_ctr:.2%}, which is above threshold ({self.ctr_threshold:.2%})."
                 ))
                 score = max(score - 0.2, 0.0)
 

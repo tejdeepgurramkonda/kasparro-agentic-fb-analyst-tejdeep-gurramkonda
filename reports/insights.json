@@ -63,14 +63,14 @@
     "confidence": 0.5,
     "audience_segment": null,
     "creative_type": "Image/Video",
-    "is_validated": false,
-    "validation_score": 0.3,
+    "is_validated": true,
+    "validation_score": 0.7,
     "evidence": [
       {
         "metric": "CTR",
         "value": 0.012662411071571622,
-        "support": false,
-        "description": "CTR is 1.27%, which is healthy."
+        "support": true,
+        "description": "CTR is 1.27%, which is low (< 2.00%)."
       }
     ],
     "actionable_recommendation": "Based on Potential creative fatigue in top performing creatives., we recommend testing new variations."

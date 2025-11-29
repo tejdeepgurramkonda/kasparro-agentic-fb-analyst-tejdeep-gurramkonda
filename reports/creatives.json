@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "campaign_name": "MEN SIGNATURE SOT",
+    "current_performance": "Low CTR/ROAS (0.00). Current creatives are not resonating with the target audience.",
+    "variations": [
+      {
+        "headline": "Join Thousands of Satisfied Men!",
+        "primary_text": "Experience the ultimate comfort and support with our Signature SOT. Thousands of men are already enjoying the difference. See what they're raving about!",
+        "call_to_action": "Shop Now",
+        "reasoning": "Leverages social proof by highlighting the popularity and satisfaction of other customers, building trust and encouraging trial."
+      },
+      {
+        "headline": "Limited Stock: Men's Signature SOT - Don't Miss Out!",
+        "primary_text": "Our Signature SOT is flying off the shelves! Get yours now before they're gone. Experience unparalleled comfort and support \u2013 while supplies last!",
+        "call_to_action": "Shop Now",
+        "reasoning": "Creates a sense of urgency and scarcity, motivating immediate action by emphasizing limited availability."
+      },
+      {
+        "headline": "Say Goodbye to Discomfort!",
+        "primary_text": "Tired of uncomfortable underwear? Our Signature SOT provides all-day comfort and support, so you can focus on what matters. Experience the difference today!",
+        "call_to_action": "Shop Now",
+        "reasoning": "Focuses on the benefit of comfort and solves the problem of uncomfortable underwear, directly addressing a common pain point for men."
+      }
+    ]
+  }
+]

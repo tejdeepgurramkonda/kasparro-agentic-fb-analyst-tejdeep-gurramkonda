@@ -2,13 +2,13 @@ python: "3.10"
 random_seed: 42
 
 llm:
-  model_name: "gemini-2.0-flash-001"
+  model_name: "gemini-2.5-pro"
   temperature: 0.0
   max_output_tokens: 8192
 
 thresholds:
   confidence_min: 0.6
-  ctr_low_threshold: 0.01
+  ctr_low_threshold: 0.02
   roas_low_threshold: 2.0
 
 paths:
