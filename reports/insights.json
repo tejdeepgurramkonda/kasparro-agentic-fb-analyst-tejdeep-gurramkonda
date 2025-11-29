@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Overall ROAS is healthy but showing signs of potential decline.",
+    "hypothesis": "While the overall ROAS is good, the daily campaign data shows fluctuations and some campaigns with low ROAS, suggesting potential inefficiencies or targeting issues.",
+    "reasoning": "The average ROAS is 5.83, which is a good indicator. However, examining the daily campaign data reveals inconsistencies. Some campaigns have very low ROAS (e.g., OMEN COTTON CLASSICS on 2025-02-19 with a ROAS of 0.32), while others are performing exceptionally well. This variance suggests that the overall ROAS could be masking underperforming areas that need attention.",
+    "confidence": 0.8,
+    "audience_segment": null,
+    "creative_type": null,
+    "is_validated": false,
+    "validation_score": 0.6000000000000001,
+    "evidence": [
+      {
+        "metric": "ROAS",
+        "value": 5.8253314063265895,
+        "support": false,
+        "description": "ROAS is 5.83, which is acceptable."
+      }
+    ],
+    "actionable_recommendation": "Based on Overall ROAS is healthy but showing signs of potential decline., we recommend testing new variations."
+  },
+  {
+    "title": "Retargeting audience shows strong performance.",
+    "hypothesis": "The retargeting audience is performing well, indicating that users who have previously interacted with the brand are more likely to convert.",
+    "reasoning": "The audience breakdown shows that the retargeting audience has a significantly higher ROAS (9.33) compared to broad (5.00) and lookalike (5.76) audiences. This suggests that retargeting efforts are effective and should be maintained or potentially scaled.",
+    "confidence": 0.7,
+    "audience_segment": "Retargeting",
+    "creative_type": null,
+    "is_validated": true,
+    "validation_score": 0.7,
+    "evidence": [
+      {
+        "metric": "N/A",
+        "value": 0.0,
+        "support": true,
+        "description": "No specific quantitative check available for this hypothesis type yet."
+      }
+    ],
+    "actionable_recommendation": "Based on Retargeting audience shows strong performance., we recommend testing new variations."
+  },
+  {
+    "title": "Instagram and Facebook platforms are performing similarly.",
+    "hypothesis": "Both Facebook and Instagram are generating comparable results, suggesting a consistent user experience across platforms.",
+    "reasoning": "The platform breakdown shows that Facebook and Instagram have similar ROAS (5.97 and 5.68, respectively) and CTR. This indicates that the ad creatives and targeting are resonating equally well on both platforms.",
+    "confidence": 0.6,
+    "audience_segment": null,
+    "creative_type": null,
+    "is_validated": true,
+    "validation_score": 0.6,
+    "evidence": [
+      {
+        "metric": "N/A",
+        "value": 0.0,
+        "support": true,
+        "description": "No specific quantitative check available for this hypothesis type yet."
+      }
+    ],
+    "actionable_recommendation": "Based on Instagram and Facebook platforms are performing similarly., we recommend testing new variations."
+  },
+  {
+    "title": "Potential creative fatigue in top performing creatives.",
+    "hypothesis": "Some top creatives might be experiencing fatigue, leading to a decrease in effectiveness over time.",
+    "reasoning": "The top creatives list shows high CTR and revenue, but it's important to monitor their performance over time. High impression counts coupled with a stable or declining CTR could indicate that the audience is becoming desensitized to these creatives, requiring a refresh.",
+    "confidence": 0.5,
+    "audience_segment": null,
+    "creative_type": "Image/Video",
+    "is_validated": false,
+    "validation_score": 0.3,
+    "evidence": [
+      {
+        "metric": "CTR",
+        "value": 0.012662411071571622,
+        "support": false,
+        "description": "CTR is 1.27%, which is healthy."
+      }
+    ],
+    "actionable_recommendation": "Based on Potential creative fatigue in top performing creatives., we recommend testing new variations."
+  },
+  {
+    "title": "Inconsistencies in campaign naming and structure.",
+    "hypothesis": "Inconsistencies in campaign naming and structure make it difficult to get a clear picture of performance.",
+    "reasoning": "There are many campaigns with similar names but slight variations (e.g., ' OMEN  Cotton  Classics' vs ' OMEN COTTON CLASSICS'). This makes it difficult to aggregate data and understand the true performance of specific product lines or targeting strategies. A standardized naming convention would improve reporting and analysis.",
+    "confidence": 0.7,
+    "audience_segment": null,
+    "creative_type": null,
+    "is_validated": true,
+    "validation_score": 0.7,
+    "evidence": [
+      {
+        "metric": "N/A",
+        "value": 0.0,
+        "support": true,
+        "description": "No specific quantitative check available for this hypothesis type yet."
+      }
+    ],
+    "actionable_recommendation": "Based on Inconsistencies in campaign naming and structure., we recommend testing new variations."
+  },
+  {
+    "title": "Men's ComfortMax Launch campaigns show high variability in performance.",
+    "hypothesis": "The 'Men ComfortMax Launch' campaign exhibits significant fluctuations in ROAS, suggesting inconsistent performance that warrants further investigation.",
+    "reasoning": "Reviewing the daily data for 'Men ComfortMax Launch' reveals ROAS values ranging from 0.76 to over 135. This wide range indicates that the campaign's performance is unstable and may be influenced by external factors or require optimization of targeting, bidding, or creative elements.",
+    "confidence": 0.6,
+    "audience_segment": "Men",
+    "creative_type": "ComfortMax Launch",
+    "is_validated": false,
+    "validation_score": 0.39999999999999997,
+    "evidence": [
+      {
+        "metric": "ROAS",
+        "value": 5.8253314063265895,
+        "support": false,
+        "description": "ROAS is 5.83, which is acceptable."
+      }
+    ],
+    "actionable_recommendation": "Based on Men's ComfortMax Launch campaigns show high variability in performance., we recommend testing new variations."
+  },
+  {
+    "title": "WOMEN | ATHLEISURE COOLING campaign shows high purchase volume but ROAS varies.",
+    "hypothesis": "WOMEN | ATHLEISURE COOLING campaign has high purchase volume, but ROAS varies significantly, indicating potential for optimization.",
+    "reasoning": "WOMEN | ATHLEISURE COOLING campaign shows high purchase volume, but ROAS varies significantly, indicating potential for optimization. Some days have very high ROAS, while others are near zero. This suggests that the campaign's performance is unstable and may be influenced by external factors or require optimization of targeting, bidding, or creative elements.",
+    "confidence": 0.6,
+    "audience_segment": "Women",
+    "creative_type": "ATHLEISURE COOLING",
+    "is_validated": false,
+    "validation_score": 0.39999999999999997,
+    "evidence": [
+      {
+        "metric": "ROAS",
+        "value": 5.8253314063265895,
+        "support": false,
+        "description": "ROAS is 5.83, which is acceptable."
+      }
+    ],
+    "actionable_recommendation": "Based on WOMEN | ATHLEISURE COOLING campaign shows high purchase volume but ROAS varies., we recommend testing new variations."
+  }
+]
